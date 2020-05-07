@@ -1,0 +1,6 @@
+[default]
+
+APPNAME = 'SparkSreamingDemo'
+MASTER = 'local[4]'
+UPSTREAM_DIR = '/Users/jojivarghese/works/data/sparkdemo'
+INBOUND_DIR = '/Users/jojivarghese/works/data/sparkdemo_inbound'
