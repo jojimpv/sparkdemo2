@@ -9,3 +9,8 @@ LCR_SCHEMA = StructType()\
     .add('value', IntegerType()) \
     .add('year', IntegerType()) \
     .add('month', IntegerType())
+
+# borough,count
+LCR_RESULT_SCHEMA = StructType()\
+    .add('borough', StringType()) \
+    .add('count', IntegerType())

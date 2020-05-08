@@ -1,8 +1,5 @@
 """
 Script used to simulate file drop from source directory to another
-Input file used:
-    https://drive.google.com/drive/folders/1mDmzNS47-q5ehSJ29kRlWRD-8allSRz_
-    split -l 100000 london_crime_by_lsoa.csv
 """
 import os
 import sys
@@ -25,13 +22,13 @@ s = sched.scheduler()
 file_counter = 0
 
 
-def get_file_list():
+def get_file_list() -> list:
     os.chdir(UPSTREAM_DIR)
     file_list = os.listdir('.')
     return file_list
 
 
-def drop_file(file_name):
+def drop_file(file_name: str) -> None:
     src_file_path = os.path.join(UPSTREAM_DIR, file_name)
     dest_file_path = os.path.join(INBOUND_DIR, file_name)
     global file_counter

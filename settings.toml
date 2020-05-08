@@ -4,3 +4,11 @@ APPNAME = 'SparkSreamingDemo'
 MASTER = 'local[4]'
 UPSTREAM_DIR = '/Users/jojivarghese/works/data/sparkdemo'
 INBOUND_DIR = '/Users/jojivarghese/works/data/sparkdemo_inbound'
+
+APPNAME_KAFKA = 'SparkSreamingKafkaDemo'
+CHECKPOINT_DIR = 'file:///Users/jojivarghese/works/data/checkpoint'
+
+#MASTER = 'spark://joji-hp-laptop:7077'
+#UPSTREAM_DIR = '/media/joji/DATA/works/data/sparkdemo2'
+#INBOUND_DIR = '/media/joji/DATA/works/data/sparkdemo2_inbound'
+#CHECKPOINT_DIR = 'file:///media/joji/DATA/works/Repo/sparkdemo2/checkpoint'
